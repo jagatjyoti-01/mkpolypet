@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from '../component/HEro'
+
 
 function About() {
   return (

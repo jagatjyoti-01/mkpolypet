@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from '../component/HEro'
+import Hero from '../component/Hero'
 import AboutUs from '../component/AboutUs'
 import Process from '../component/Process'
 import TrustIndicators from '../component/TrustIndicator'
