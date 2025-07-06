@@ -1,13 +1,13 @@
 import React from 'react'
-import Hero from '../component/Hero'
-import AboutUs from '../component/AboutUs'
-import Process from '../component/Process'
-import TrustIndicators from '../component/TrustIndicator'
-import Testimonial from '../component/Testimonials'
-import BlogSection from '../component/Blog'
-import WhyUs from '../component/WhyUs'
-import ContactUs from '../component/Contact'
-import Footer from '../component/Footer'
+import Hero from '../components/Hero'
+import AboutUs from '../components/AboutUs'
+import Process from '../components/Process'
+import TrustIndicators from '../components/TrustIndicator'
+import Testimonial from '../components/Testimonials'
+import BlogSection from '../components/Blog'
+import WhyUs from '../components/WhyUs'
+import ContactUs from '../components/Contact'
+import Footer from '../components/Footer'
 
 function Home() {
   return (
