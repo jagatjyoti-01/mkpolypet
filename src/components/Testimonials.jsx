@@ -1,52 +1,53 @@
 import React, { useState, useEffect } from 'react';
 // import image from '../image/testimonial-img.jpg';
 import { FaStar } from 'react-icons/fa'; // For rating stars
+import image from "../assets/image/recyclebottle.jpg"
 
 const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const testimonials = [
-    {
-      name: "Emily Carter",
-      location: "Los Angeles, USA",
-      text: "Absolutely amazing service! jj food was fresh, and delivery was on time. Highly recommend!",
-      rating: 5,
-      //image: image,
-    },
-    {
-      name: "Rajesh Kumar",
-      location: "Mumbai, India",
-      text: "Great experience! The variety of options available made ordering so easy. Would use it again.",
-      rating: 4,
-      //image: image,
-    },
-    {
-      name: "Sophia Martinez",
-      location: "London, UK",
-      text: "Loved the seamless ordering process. The food was still hot when it arrived. Impressed!",
-      rating: 5,
-     // image: image,
-    },
-    {
-      name: "Liam O'Connor",
-      location: "Dublin, Ireland",
-      text: "Affordable pricing and quick delivery. The UI of the app is very user-friendly.",
-      rating: 4,
-      //image: image,
-    },
-    {
-      name: "Aisha Hassan",
-      location: "Dubai, UAE",
-      text: "Exceptional service! I appreciate how easy it was to order, and the food quality was top-notch.",
-      rating: 5,
-     // image: image,
-    },
-  ];
+  {
+    name: "Anjali Sharma",
+    location: "Bangalore, India",
+    text: "MK Polypet's recycling process is truly impressive. Our company has partnered with them for over a year, and we've seen a significant reduction in our plastic waste footprint.",
+    rating: 5,
+    image: image,
+  },
+  {
+    name: "biswa ranjan",
+    location: "Singapore",
+    text: "Their commitment to sustainability and quality is unmatched. The recycled materials we receive are always top-notch and help us meet our green goals.",
+    rating: 5,
+    image: image,
+  },
+  {
+    name: "sanjay kumar",
+    location: "Chennai, India",
+    text: "MK Polypet India Pvt. Ltd. has made plastic recycling easy and efficient for our business. Their team is professional and always delivers on time.",
+    rating: 4,
+    image: image,
+  },
+  {
+    name: "kumar prasant",
+    location: "Patna, Bihar",
+    text: "We appreciate MK Polypet's transparent process and their dedication to environmental responsibility. Highly recommended for anyone looking to recycle plastics.",
+    rating: 5,
+    image: image,
+  },
+  {
+    name: "Rajesh sarma",
+    location: "bbsr ,Odisha",
+    text: "Thanks to MK Polypet, our company has achieved its sustainability targets. Their recycled plastic products are of excellent quality.",
+    rating: 5,
+    image: image,
+  },
+];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    }, 1000); // Changed from 5000 to 1000 (1 second)
+    }, 4000); // Changed from 5000 to 1000 (1 second)
     return () => clearInterval(interval);
   }, [testimonials.length]);
 
@@ -60,11 +61,11 @@ const Testimonial = () => {
 
   return (
     <div className="py-12 px-4 flex justify-center items-center min-h-[300px] relative bg-cover bg-center" style={{ backgroundImage: `url(${testimonials[currentIndex].image})` }}>
-      <div className="absolute inset-0 bg-black bg-opacity-30"></div> {/* Optional overlay for better text visibility */}
+      <div className="absolute inset-0 bg-green-900/60  bg-opacity-30"></div> 
       <div className="max-w-4xl w-full text-center relative z-10">
         <div className="mb-6">
-          <span className="text-blue-800 text-lg md:text-xl font-semibold uppercase tracking-wider">
-            TESTIMONIAL
+          <span className="text-white -800 text-lg md:text-3xl font-bold uppercase tracking-wider" style={{fontFamily:"roboto"}}>
+           __ TESTIMONIAL __
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-white mt-2">
             What Clients Are Saying

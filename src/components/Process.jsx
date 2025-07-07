@@ -3,6 +3,10 @@ import { motion } from "framer-motion";
 // 1) Make sure to install react-icons: npm install react-icons
 import serviceimage1 from "../assets/image/serviceimg1.webp";
 import serviceimage2 from "../assets/image/serviceimag2.webp";
+import fdistribution from "../assets/image/fdistribution.png";
+import recycleproduct from "../assets/image/recycleproduct.jpg"
+import processing from "../assets/image/Processing.jpg"
+import segrigation from "../assets/image/segrigation.png"
 import {
   FaCertificate,
   FaRecycle,
@@ -30,14 +34,14 @@ export default function Process() {
       title: " Segregation & Sorting",
       description:
         "Manual and automated separation of recyclable materials to ensure quality output and reduced contamination.",
-      image: serviceimage2,
+      image: segrigation,
       alt: "Segregation & Sorting imag",
     },
     {
       title: "Processing & Recycling",
       description:
         "Advanced recycling of collected waste into usable raw materials like PET flakes and plastic granules.",
-      image:serviceimage1 ,
+      image:processing ,
       alt: "PProcessing & Recycling img",
     },
     {
@@ -51,14 +55,14 @@ export default function Process() {
       title: "Production of Recycled Products",
       description:
         "Manufacturing high-quality recycled plastic products ready for industrial reuse and export.",
-      image: serviceimage1,
+      image: recycleproduct,
       alt: "Patient using digital physiotherapy platform",
     },
     {
       title: "Sales & Distribution",
       description:
         "Supply and export of recycled plastic granules and by-products across India and global markets.",
-      image: serviceimage2,
+      image: fdistribution,
       alt: "Patient using digital physiotherapy platform",
     },
     // {
@@ -93,7 +97,7 @@ export default function Process() {
     },
     {
       icon: <FaRecycle className="text-4xl text-[#34B34C]" />,
-      title: "TEnd-to-End Waste Handling",
+      title: "End-to-End Waste Handling",
       description:
         "From collection to recycling, we manage the full waste life cycle.",
     },

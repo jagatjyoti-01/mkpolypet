@@ -7,7 +7,7 @@ import herosubimg1 from "../assets/image/herosubimg.webp";
 import herosubimage2 from "../assets/image/i (2).webp";
 import herosubimage3 from "../assets/image/i (3).webp";
 import herosubimage4 from "../assets/image/i.webp";
-import herosubimage5 from "../assets/image/shutterstock_1492626947.jpg";
+// import herosubimage5 from "../assets/image/shutterstock_1492626947.jpg";
 import herosubimage6 from "../assets/image/WasteManagement9.jpg";
 import herosubimage7 from "../assets/image/XXL_height.webp";
 import herosubimage8 from "../assets/image/Screenshot 2025-07-06 025312.png";
@@ -20,7 +20,7 @@ const Hero = () => {
     herosubimage2,
     herosubimage3,
     herosubimage4,
-    herosubimage5,
+    // herosubimage5,
     herosubimage9,
     herosubimage6,
     herosubimage7,
@@ -28,7 +28,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="relative min-h-[400px] sm:min-h-[500px] lg:min-h-[600px] mt-[56px] sm:mt-[72px] overflow-hidden group">
+    <div className="relative min-h-[400px] sm:min-h-[500px] lg:min-h-[600px] mt-[20px] overflow-hidden group">
       {/* Background Image */}
       <div className="absolute inset-0 transform group-hover:scale-105 transition-transform duration-700 ease-out">
         <img
@@ -41,7 +41,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative container mx-auto px-4 h-full flex items-center">
-        <div className="max-w-5xl space-y-4 sm:space-y-6 py-12 sm:py-16 lg:py-20">
+        <div className="max-w-5xl space-y-4 sm:space-y-6 py-12 sm:py-16 lg:py-28">
           {/* Eyebrow text */}
           <div className="inline-flex items-center justify-center gap-2 px-3 py-1 rounded-full bg-teal-50 border">
             <span className="w-2 h-2 rounded-full bg-teal-500 animate-pulse" />

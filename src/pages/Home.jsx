@@ -5,7 +5,7 @@ import Process from '../components/Process'
 import TrustIndicators from '../components/TrustIndicator'
 import Testimonial from '../components/Testimonials'
 import BlogSection from '../components/Blog'
-import WhyUs from '../components/WhyUs'
+import WhyUs from '../components/LearnToRecycle'
 import ContactUs from '../components/Contact'
 import Footer from '../components/Footer'
 
@@ -20,7 +20,7 @@ function Home() {
 <BlogSection />
 <WhyUs />
 <ContactUs />
-<Footer />
+
 
 
     </div>

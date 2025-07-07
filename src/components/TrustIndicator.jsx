@@ -25,12 +25,12 @@ const TrustIndicators = () => {
     {
       icon: FaUsers,
       value: 1000,
-      label: "Happy Patients",
+      label: "Ton's of Plastic recycle",
       delay: "0",
     },
     {
       icon: FaClock,
-      value: 15,
+      value: 3,
       label: "Years Experience",
       delay: "100",
     },

@@ -8,7 +8,9 @@ const NAV_ITEMS = [
   { label: "Home", path: "/" },
   { label: "About Us", path: "/about-us" },
   { label: "Services", path: "/services" },
-  { label: "Physiotherapists", path: "/physiotherapists" },
+  { label: "FAQ", path: "/faq" },
+  { label: "Blog", path: "/galery" },
+  { label: "Galery", path: "/blog" },
   { label: "Contact Us", path: "/contact-us" },
 ];
 

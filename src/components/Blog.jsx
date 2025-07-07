@@ -1,36 +1,37 @@
 import React from 'react';
-// import blog1 from '../image/blog-1.jpg';
-// import blog2 from '../image/blog-2.jpg';
-// import blog3 from '../image/blog-3.jpg';
+ import blog1 from '../assets/image/Screenshot 2025-07-06 023421.png';
+ import blog2 from '../assets/image/recyclebottle.jpg';
+ import blog3 from '../assets/image/isocerificate.png';
 
 const BlogSection = () => {
   const blogPosts = [
     {
       id: 1,
-      //image: blog1, // Replace with actual image URLs
-      date: '01 Jan 2025',
-      title: 'Remove Back Pain While Working on o physio',
+      image: blog1, // Replace with actual image URLs
+      date: '01 july 2025',
+      title: 'Inside Our Recycling Plant: A Step-by-Step Tour',
       comments: '3 Comments',
 
-      description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Laudantium hic consequatur beatae architecto,',
+      description: 'Get a behind-the-scenes look at how we recycle tons of Plastic waste each month.',
 
     },
     {
       id: 2,
-     // image: blog2,
-      date: '01 Jan 2025',
-      title: 'Benefits of a weekly physiotherapy session',
-      comments: '3 Comments',
-      description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Laudantium hic consequatur beatae architecto,',
+      image: blog2,
+      date: '09 jun 2025',
+      title: 'Why Recycling Matters More Than Ever',
+      comments: '6 Comments',
+      description: 'Learn the impact of plastic pollution and how sustainable practices can change our future.,',
     },
     {
       id: 3,
-     // image: blog3,
-      date: '01 Jan 2025',
-      title: 'Regular exercise can slow aging process',
-      comments: '3 Comments',
-      description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Laudantium hic consequatur beatae architecto,',
+      image: blog3,
+      date: '20 june 2025',
+      title: 'Understanding ISO 14001: What Our Certification Means',
+      comments: '2 Comments',
+      description: 'A quick guide to why our environmental standards matter to clients and the planet.',
     },
+    
   ];
 
   return (
@@ -39,17 +40,15 @@ const BlogSection = () => {
         {/* Header */}
         <div className="mb-8">
           <div className="flex justify-center mb-2">
-            <span className="text-blue-500 text-sm font-semibold uppercase tracking-wider border-b-2 border-blue-500 pb-1">
-              OUR BLOG
-            </span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-gray-800" style={{fontFamily:"Roboto"}}>
+          Blogs
+        </h2>
           </div>
-          <h1 className="text-4xl font-bold text-gray-800">
-            Excellent Facility and High Quality Therapy
+          <h1 className="text-4xl font-bold text-[#34B34C]">
+            Insights & Updates from the World of Recycling
           </h1>
           <p className="text-gray-500 mt-4">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quaeret deleniti amet at atque sequi quibusdam cumque
-            itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!
-          </p>
+Stay informed with stories, innovations, expert tips, and industry insights on plastic waste management, environmental compliance, and sustainable recycling practices.          </p>
         </div>
 
         {/* Blog Cards Grid */}
@@ -85,7 +84,7 @@ const BlogSection = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">{post.title}</h3>
                 <p className="text-gray-600 mb-6">{post.description}</p>
-                <a href="/BlogPage"><button className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors duration-300">
+                <a href="/BlogPage"><button className="bg-[#34BC43] text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors duration-300">
                   Read More
                 </button></a>
               </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 //import logo from "../image/logo.png";
-//import Footerimg from "../image/footerimg.jpg";
+import Footerimg from "../assets/image/herosubimg.webp"
 import { PiArrowCircleUpBold } from "react-icons/pi";
 import { TiSocialFacebook } from "react-icons/ti";
 import { SlSocialTwitter } from "react-icons/sl";
@@ -22,13 +22,13 @@ const Footer = () => {
     <div
       className="relative py-10 px-4 sm:px-6 lg:px-28 text-white"
       style={{
-        // backgroundImage: `url(${Footerimg})`,
+         backgroundImage: `url(${Footerimg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
       {/* Overlay to fade the background image */}
-      <div className="absolute inset-0 bg-black bg-opacity-90"></div>
+      <div className="absolute inset-0 bg-black/92 bg-opacity-90"></div>
 
       <div className="container relative mx-auto px-4 sm:px-6 z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -152,10 +152,10 @@ const Footer = () => {
           className="mt-10 flex flex-col md:flex-row justify-between items-center border-t border-gray-700 pt-5"
         >
           <p className="text-gray-400 text-sm sm:text-base text-center md:text-left mb-4 md:mb-0">
-            © Friends Physio . All rights reserved.
+            © MK Polypet . All rights reserved.
           </p>
           <p className="text-gray-400 text-sm sm:text-base text-center md:text-left mb-4 md:mb-0">
-            Designed by <a href="#" className="text-blue-400 hover:underline">Biswa and jagat team</a>
+            Designed by <a href="#" className="text-blue-400 hover:underline">--</a>
           </p>
           <motion.a
             whileHover={{ scale: 1.2 }}
