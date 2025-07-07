@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '../components/Hero'
-import AboutUs from '../components/AboutUs'
+import About from '../components/About'
 import Process from '../components/Process'
 import TrustIndicators from '../components/TrustIndicator'
 import Testimonial from '../components/Testimonials'
@@ -13,7 +13,7 @@ function Home() {
   return (
     <div>
 <Hero />
-<AboutUs />
+<About />
 <Process/>
 <TrustIndicators />
 <Testimonial />
