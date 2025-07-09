@@ -36,12 +36,12 @@ function LearnToRecycle() {
   ];
 
   return (
-    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white py-6 md:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-green-700 font-custom">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-green-700 font-custom" >
           Recycle Plastic the Right Way
         </h2>
-        <p className="mt-4 max-w-3xl mx-auto text-secondary2 font-custom1 text-sm md:text-lg">
+        <p className="mt-4 max-w-3xl mx-auto text-secondary font-custom1 text-sm md:text-lg">
           Empower yourself with simple practices that make a big impact on the planet. Learn how to properly sort, clean, and recycle plastics in your daily life.
         </p>
       </div>

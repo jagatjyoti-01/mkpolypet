@@ -4,12 +4,15 @@ import AboutUs from '../components/About'
 import ContactUs from '../components/Contact'
 import FAQSection from '../components/FAQSection'
 import Process from '../components/Process'
+import Owner from '../components/About/Owner'
+import AboutDetails from '../components/AboutDetails'
 
 function AboutPage() {
   return (
     <div>
    <AboutHero />
-   <AboutUs/>
+   <AboutDetails/>
+   <Owner />
    <Process />
    <FAQSection />
    <ContactUs />

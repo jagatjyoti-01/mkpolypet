@@ -16,7 +16,7 @@ const Testimonial = () => {
   },
   {
     name: "biswa ranjan",
-    location: "Singapore",
+    location: "raypur, Odisha",
     text: "Their commitment to sustainability and quality is unmatched. The recycled materials we receive are always top-notch and help us meet our green goals.",
     rating: 5,
     image: image,

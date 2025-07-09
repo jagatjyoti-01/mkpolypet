@@ -35,16 +35,16 @@ const BlogSection = () => {
   ];
 
   return (
-    <section className="py-12 px-4 bg-white">
+    <section className=" py-8 md:py-12 px-4 bg-white">
       <div className="max-w-5xl mx-auto text-center">
         {/* Header */}
-        <div className="mb-8">
+        <div className="mb-4 md:mb-8">
           <div className="flex justify-center mb-2">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-gray-800" style={{fontFamily:"Roboto"}}>
+            <h2 className="text-3xl  md:text-5xl font-bold mb-4 text-gray-800" style={{fontFamily:"Roboto"}}>
           Blogs
         </h2>
           </div>
-          <h1 className="text-4xl font-bold text-[#34B34C]">
+          <h1 className="text-2xl md:text-4xl font-bold text-[#34B34C]">
             Insights & Updates from the World of Recycling
           </h1>
           <p className="text-gray-500 mt-4">
@@ -84,7 +84,7 @@ Stay informed with stories, innovations, expert tips, and industry insights on p
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">{post.title}</h3>
                 <p className="text-gray-600 mb-6">{post.description}</p>
-                <a href="/BlogPage"><button className="bg-[#34BC43] text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors duration-300">
+                <a href=""><button className="bg-[#34BC43] text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors duration-300">
                   Read More
                 </button></a>
               </div>

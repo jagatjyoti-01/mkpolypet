@@ -7,12 +7,13 @@ import { div } from "framer-motion/client";
 import { TbTargetArrow } from "react-icons/tb";
 import { BsCrosshair2 } from "react-icons/bs";
 import { FaArrowCircleRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
     <div className="container mx-auto px-4 py-6 md:py-12 max-w-7xl">
       <motion.h1
-        className="text-center text-5xl font-bold mb-8 md:mb-16 font-custom "
+        className="text-center text-3xl md:text-5xl font-bold mb-4 md:mb-16 font-custom "
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -39,7 +40,7 @@ const AboutUs = () => {
             animate={{ scale: 1 }}
             transition={{ delay: 0.5, duration: 0.5 }}
           >
-            <div className="text-xl md:text-3xl font-bold">10+</div>
+            <div className="text-xl md:text-3xl font-bold">03+</div>
             <div className="text-xs md:text-sm">Years of Experience</div>
           </motion.div>
         </motion.div>
@@ -51,12 +52,12 @@ const AboutUs = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           className="space-y-4  md:space-y-8"
         >
-          <h2 className="text-2xl md:text-4xl font-bold leading-tight font-custom text-center text-[#34B34c]">
+          <h2 className="text-2xl md:text-4xl font-bold leading-tight font-custom md:text-left text-center text-[#34B34c]">
             Leading Plastic Recycling With Purpose and Innovation
           </h2>
 
           <p
-            className="text-gray-600 leading-relaxed font-custom1 text-center line-clamp-4 sm:line-clamp-none"
+            className="text-gray-600 leading-relaxed font-custom1 md:text-left text-center line-clamp-4 sm:line-clamp-none"
             style={{ fontFamily: "Roboto, sans-serif" }}
           >
             MK Polypet India Pvt. Ltd. is a certified recycling company based in
@@ -106,7 +107,7 @@ const AboutUs = () => {
               </p>
             </motion.div>
           </div>
- 
+ <Link to="/about-us">
           <motion.button
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -117,6 +118,9 @@ const AboutUs = () => {
           >
             Learn More AboutUs <FaArrowCircleRight className="w-5 h-5" />
           </motion.button>
+          </Link>
+
+           <Link to="/contact-us">
           <motion.button
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -127,6 +131,7 @@ const AboutUs = () => {
           >
             Contact Our Team <FaArrowCircleRight className="w-5 h-5" />
           </motion.button>
+          </Link>
         </motion.div>
       </div>
     </div>

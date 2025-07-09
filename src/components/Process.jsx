@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 // 1) Make sure to install react-icons: npm install react-icons
 import serviceimage1 from "../assets/image/serviceimg1.webp";
 import serviceimage2 from "../assets/image/serviceimag2.webp";
@@ -12,7 +13,8 @@ import {
   FaRecycle,
   FaUsersCog,
   FaMapMarkedAlt,
-  FaGlobeAsia,
+  GiFootprint,
+  FaShieldAlt
 } from "react-icons/fa";
 import { MdVerified } from "react-icons/md";
 import { GiFactory, GiLeafSwirl } from "react-icons/gi";
@@ -114,10 +116,10 @@ export default function Process() {
         "A dedicated team trained in handling all types of waste safely.",
     },
     {
-      icon: <FaMapMarkedAlt className="text-4xl text-[#34B34C]" />,
-      title: " Pan-India Operations",
+      icon: <FaShieldAlt className="text-4xl text-[#34B34C]" />,
+      title: " Safety First",
       description:
-        "Expanding reach across India through reliable logistics and partnerships.",
+        "Strict safety protocols across all operations to protect staff and environment.",
     },
     {
       icon: <GiLeafSwirl className="text-4xl text-[#34B34C]" />,
@@ -126,10 +128,10 @@ export default function Process() {
         "Minimizing environmental impact through sustainable practices.",
     },
     {
-      icon: <FaGlobeAsia className="text-4xl text-[#34B34C]" />,
-      title: "Global Market Presence",
-      description:
-        "Exporting high-quality recycled materials across international markets.",
+      icon: <GiFootprint className="text-4xl text-[#34B34C]" />,
+      title: "Carbon Footprint Reduction",
+  description:
+    "Implementing strategies to lower greenhouse gas emissions across operations.",
     },
   ];
 
@@ -241,6 +243,7 @@ export default function Process() {
 
         {/* More Details Button */}
         <div className="text-center mt-8">
+           <Link to="/services">
           <motion.button
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -250,6 +253,7 @@ export default function Process() {
           >
             More Details
           </motion.button>
+          </Link>
         </div>
       </div>
     </section>

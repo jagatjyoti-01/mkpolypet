@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import CountUp from "react-countup";
-import { FaUsers, FaClock, FaTrophy } from "react-icons/fa";
+import { FaRecycle,FaUsers, FaClock, FaTrophy } from "react-icons/fa";
 
 const TrustIndicators = () => {
   const ref = useRef(null);
@@ -23,7 +23,7 @@ const TrustIndicators = () => {
 
   const indicators = [
     {
-      icon: FaUsers,
+      icon: FaRecycle,
       value: 1000,
       label: "Ton's of Plastic recycle",
       delay: "0",
@@ -59,7 +59,7 @@ const TrustIndicators = () => {
             >
               <div className="relative mb-4">
                 <div className="absolute inset-0 bg-teal-100 rounded-full blur-lg group-hover:blur-xl transition-all duration-300 opacity-0 group-hover:opacity-50" />
-                <indicator.icon className="relative w-8 h-8 text-teal-600 group-hover:scale-110 transition-transform duration-300" />
+                <indicator.icon className="relative w-10 h-10 text-[#34B34C] group-hover:scale-110 transition-transform duration-300" />
               </div>
 
               <div className="relative">
